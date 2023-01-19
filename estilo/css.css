@@ -1,0 +1,364 @@
+.lateral-logo {
+    height: 100%;
+    background-color: #FF0000
+    display: flex;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 768px){}
+html {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px){}
+body {
+    background-color: #F80D0D;
+    
+}
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.font-login-big {
+    font-size: 3.5vw;
+    font-weight: 1000;
+}
+
+.font-login-text {
+    color: white;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.font-style-label {
+    font-family: 'DinRoundPro';
+    font-size: 0.5rem;
+}
+
+p {
+    /* margin: 0 0 10px; */
+}
+
+.font-login-medium {
+    font-size: 2.5vw;
+}
+
+.subtitle-view {
+    padding: 0.5rem;
+}
+
+.seguridad-container div h2 {
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    border-color: red;
+}
+
+.seguridad-container div {
+    background-color: rgba(255, 255, 255, 0.88);
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 1rem;
+    position: relative;
+    left: 800px;
+    /* position: relative; */
+    position: relative;
+    top: -300px;
+}
+
+.subtitle-view {
+    padding: 0.5rem;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+@media only screen and (min-width: 492px)
+.row {
+    height: 100%;
+    display: table-row;
+}
+
+
+
+
+
+
+.input-especial {
+    border: none;
+    background: none;
+    padding-bottom: 1px;
+}
+
+.input-format {
+    width: 70%;
+    height: 2.8em;
+    background-color: #ffffff;
+    opacity: 0.5;
+    padding-left: 1em;
+    outline: none;
+    border: 0.016px solid rgba(0, 0, 0, 0.1803921568627451);
+    font-size: 12px !important;
+}
+
+.font-style-value {
+    font-family: 'Arial';
+}
+
+.text-color-very-dark {
+    color: rgb(0, 0, 0);
+}
+
+.font-medium {
+    font-size: 15px;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    line-height: normal;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.button-login {
+    width: 80%;
+    font-size: 12px;
+}
+.positive-button {
+    display: block;
+    height: 2.5em;
+    width: 12rem;
+    margin: 1rem auto 0.2rem auto;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.bkg-color-red {
+    background-color: rgb(255, 0, 0);
+}
+.font-style-label {
+    font-family: 'DinRoundPro';
+    font-size: 0.5rem;
+}
+
+.text-color-very-light {
+    color: rgb(255, 255, 255);
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+.label-login {
+    color: rgb(120, 120, 120);
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100%;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contenedor-input img {
+    cursor: pointer;
+    margin-right: 0.1rem;
+    padding-top: 2rem;
+    vertical-align: middle;
+    width: 0.7em;
+}
+img {
+    vertical-align: middle;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.olvido-pass {
+    color: #000000;
+    font-family: Arial;
+    font-size: 13px;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+}
+.text-center {
+    text-align: center;
+}
+
+body {
+    line-height: 1;
+}
+
+@media (min-width: 768px)
+.col-sm-8 {
+    width: 33.33333333%;
+}
+
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-13, .col-sm-13, .col-md-13, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .col-sm-18, .col-md-18, .col-lg-18, .col-xs-19, .col-sm-19, .col-md-19, .col-lg-19, .col-xs-20, .col-sm-20, .col-md-20, .col-lg-20, .col-xs-21, .col-sm-21, .col-md-21, .col-lg-21, .col-xs-22, .col-sm-22, .col-md-22, .col-lg-22, .col-xs-23, .col-sm-23, .col-md-23, .col-lg-23, .col-xs-24, .col-sm-24, .col-md-24, .col-lg-24 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+@media (min-width: 768px)
+.col-sm-12 {
+    width: 50%;
+}
+
+
+.font-login-medium {
+    font-size: 2.5vw;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.font-login-big {
+    font-size: 3.5vw;
+    font-weight: 1000;
+}
+.font-login-text {
+    color: white;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.font-style-label {
+    font-family: 'DinRoundPro';
+
+}
+
+.font-login-small {
+    font-size: 2vw;
+}
+
+
+.font-style-label {
+    font-family: 'Sofia Sans', sans-serif;
+    
+}
+
+@media (min-width: 768px){}
+.col-sm-12 {
+    width: 50%;
+}
+
+.lateral-logo {
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.6509803921568628);
+    display: flex;
+}
+
+@media (min-width: 768px){}
+.col-sm-3 {
+    width: 12.5%;
+}
+
+
+
+.input-especial {
+    padding-bottom: 1px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    background: none;
+}
+
+
+
+.label-login {
+    color: rgb(120, 120, 120);
+     font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100%;
+    font-family: 'Sofia Sans', sans-serif;
+
+}
